@@ -346,3 +346,9 @@
 
 # Borg backup-archive (https://github.com/borgbackup/borg)
 0    string    BORG_SEG     BORG Backup Archive
+
+# Android payload.bin OTA update file, by SecuredNow 
+0    string        CrAU    Android payload.bin OTA update file
+>8   belong        !0x2    {invalid}
+>8   belong        x       \b, version : %d
+>16  belong        x       \b, manifest size : %d
